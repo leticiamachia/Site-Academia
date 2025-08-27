@@ -1,9 +1,5 @@
-html {
-  height: 100%;
-  width: 100%;
-}
 
-sidebar {
+sidebar{
   background-color: #4A4A4A;
   height: 100vh;
 }
