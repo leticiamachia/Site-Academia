@@ -2,9 +2,6 @@ html {
   height: 100%;
   width: 100%;
 }
-sidebar{
-  background-color: #4A4A4A;
-}
 
 main {
   background-color: gray;
@@ -27,5 +24,48 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.sidebar {
+  /*height: 100vh;*/
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-right: 1px solid #ED5A24;
+}
+
+.sidebar h4 {
+  font-family: 'Moriel', sans-serif;
+  font-size: 24px;
+}
+
+.sidebar a,
+.sidebar button {
+  font-size: 16px;
+  color: white;
+  transition: 0.3s ease;
+}
+
+.sidebar a:hover,
+.sidebar button:hover {
+  background-color: #ED5A24;
+  color: #212121;
+}
+
+.dropdown-menu {
+  background-color: #212121;
+  border: none;
+}
+
+.dropdown-item {
+  color: #ED5A24;
+}
+
+.dropdown-item:hover {
+  background-color: #ED5A24;
+  color: #212121;
+}
+aside{
+  background-color: #4A4A4A;
 }
 
