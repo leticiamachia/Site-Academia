@@ -5,7 +5,11 @@ html {
 
 main {
   background-color: gray;
-  
+
+}
+.sidebar h4 {
+  font-family: 'Moriel', sans-serif;
+  font-size: 24px;
 }
 header{
   background-color: #212121;
@@ -24,19 +28,14 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
+  color:#ED5A24;
 }
-
-.sidebar {
-  /*height: 100vh;*/
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-right: 1px solid #ED5A24;
-}
-
-.sidebar h4 {
-  font-family: 'Moriel', sans-serif;
-  font-size: 24px;
+h1{
+  font-family: arial;
+  font-size: 30px;
+  color: #212121;
+  margin-top: 5px;
+  font-weight: bold;
 }
 
 .sidebar a,
@@ -68,4 +67,126 @@ header{
 aside{
   background-color: #4A4A4A;
 }
+
+.menu-group {
+  flex-grow: 1;
+}
+
+.contact-info h5 {
+  font-family: 'Moriel', sans-serif;
+  font-size: 20px;
+  color: #ED5A24;
+}
+
+.contact-info p {
+  margin: 0;
+  font-size: 14px;
+}
+
+.contact-info i {
+  margin-right: 8px;
+  color: #ED5A24;
+}
+
+.sidebar {
+  background-color: #4A4A4A;
+  border-right: 1px solid #ED5A24;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Fixa lateral apenas em telas médias e grandes */
+@media (min-width: 768px) {
+  .sidebar {
+    height: 100vh;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+}
+
+/* Em telas pequenas, ela será apenas um bloco normal */
+@media (max-width: 767px) {
+  .sidebar {
+    position: static;
+    width: 100%;
+    margin-bottom: 20px;
+    border-right: none;
+    border-bottom: 1px solid #ED5A24;
+  }
+}
+@media (max-width: 767px) {
+  main {
+    margin-top: 0;
+  }
+}
+#toggle-theme {
+  z-index: 1100;
+}
+
+/* Tema Escuro (padrão) */
+body.dark-mode {
+  background-color: #212121;
+  color: white;
+}
+
+body.dark-mode main {
+  background-color: gray;
+}
+
+body.dark-mode .card {
+  background-color: #212121;
+  color: #ED5A24;
+}
+
+/* Tema Claro */
+body.light-mode {
+  background-color: #f8f9fa;
+  color: #212121;
+}
+
+body.light-mode header {
+  background-color: white;
+  color: #212121;
+}
+
+body.light-mode .sidebar {
+  background-color: #ED5A24;
+  border-color: #212121;
+}
+
+body.light-mode .card {
+  background-color: white;
+  color: #212121;
+}
+
+body.light-mode .dropdown-menu {
+  background-color: white;
+}
+
+body.light-mode .dropdown-item {
+  color: #212121;
+}
+
+body.light-mode .dropdown-item:hover {
+  background-color: #ED5A24;
+  color: white;
+}
+
+body.light-mode .contact-info h5,
+body.light-mode .contact-info i {
+  color: #212121;
+}
+body.light-mode .btn-outline-light {
+  color: #212121;
+  border-color: #212121; 
+}
+
+body.light-mode .btn-outline-light:hover {
+  background-color: #ED5A24;
+  color: #fff;
+  border-color: #ED5A24;
+}
+
+
 
