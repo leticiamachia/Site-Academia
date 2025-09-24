@@ -1,6 +1,4 @@
-function AddCarrinho() {
-  alert("Item adicionado ao carrinho!");
-}
+
 
 document.addEventListener("DOMContentLoaded", function() {
   const toggleBtn = document.getElementById("toggle-theme");
@@ -125,6 +123,7 @@ function renderizarCarrinho() {
       Valor total: R$ ${total.toFixed(2)}
     </div>`;
 }
+
 
 
 
