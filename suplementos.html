@@ -64,15 +64,13 @@
 
       <!--Conteúdo-->
       <main class="col-12 col-md-10 col-lg-10">
-
-
         <div class="card-group">
           <div class="card">
             <img src="imgsuplementos/pre1.jpg" class="card-img-top" alt="pre-treino">
             <div class="card-body">
               <h5 class="card-title">Pré Treino</h5>
               <p class="card-text">R$ 125,30</p>
-              <button type="button" class="btn btn-outline-light"onclick="AddCarrinho()">Adicionar ao Carrinho</button>
+              <button class="btn btn-outline-light" onclick="item(10)">Adicionar ao Carrinho</button>
             </div>
           </div>
           <div class="card">
@@ -80,7 +78,7 @@
             <div class="card-body">
               <h5 class="card-title">Pré Treino</h5>
               <p class="card-text">R$ 138,61</p>
-              <button type="button" class="btn btn-outline-light"onclick="AddCarrinho()">Adicionar ao Carrinho</button>
+              <button class="btn btn-outline-light" onclick="item(11)">Adicionar ao Carrinho</button>
             </div>
           </div>
           <div class="card">
@@ -88,7 +86,7 @@
             <div class="card-body">
               <h5 class="card-title">Pré Treino</h5>
               <p class="card-text">R$ 94,91</p>
-              <button type="button" class="btn btn-outline-light"onclick="AddCarrinho()">Adicionar ao Carrinho</button>
+              <button class="btn btn-outline-light" onclick="item(12)">Adicionar ao Carrinho</button>
             </div>
           </div>
         </div>
@@ -99,7 +97,7 @@
             <div class="card-body">
               <h5 class="card-title">Femini Whey Protein Baunilha 900G</h5>
               <p class="card-text">R$ 126,00</p>
-              <button type="button" class="btn btn-outline-light"onclick="AddCarrinho()">Adicionar ao Carrinho</button>
+              <button class="btn btn-outline-light" onclick="item(13)">Adicionar ao Carrinho</button>
             </div>
           </div>
           <div class="card">
@@ -107,7 +105,7 @@
             <div class="card-body">
               <h5 class="card-title">Top Whey 3W + Performance 900G</h5>
               <p class="card-text">R$ 193,81</p>
-              <button type="button" class="btn btn-outline-light"onclick="AddCarrinho()">Adicionar ao Carrinho</button>
+              <button class="btn btn-outline-light" onclick="item(14)">Adicionar ao Carrinho</button>
             </div>
           </div>
           <div class="card">
@@ -115,17 +113,32 @@
             <div class="card-body">
               <h5 class="card-title">Whey Protein 100% Whey 900g</h5>
               <p class="card-text">R$ 145,40</p>
-              <button type="button" class="btn btn-outline-light"onclick="AddCarrinho()">Adicionar ao Carrinho</button>
+              <button class="btn btn-outline-light" onclick="item(15)">Adicionar ao Carrinho</button>
             </div>
           </div>
         </div>
     </div>
   </div>
-
   </main>
+
+
+  <!--Carrinho -->
+  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasRightLabel">Carrinho</h5>
+      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <div class="container">
+        <div class="row">
+          <div class="col-12" id="carrinho-itens"></div>
+          <div class="col-12" id="total"></div>
+        </div>
+      </div>
+    </div>
   </div>
-  </div>
-  <footer></footer>
+
+
   <script src="script.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
