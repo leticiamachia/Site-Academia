@@ -7,20 +7,25 @@ main {
   background-color: gray;
 
 }
+
 .sidebar h4 {
   font-family: 'Moriel', sans-serif;
   font-size: 24px;
 }
-header{
+
+header {
   background-color: #212121;
   color: #ED5A24;
 }
-.card{
+
+.card {
   background-color: #212121;
-  color:#ED5A24;
+  color: #ED5A24;
 }
+
 @import url('https://fonts.cdnfonts.com/css/moriel');
-#titulo{
+
+#titulo {
   margin-bottom: 0;
   font-family: 'Moriel', sans-serif;
   font-size: 65px;
@@ -28,9 +33,10 @@ header{
   display: flex;
   justify-content: center;
   align-items: center;
-  color:#ED5A24;
+  color: #ED5A24;
 }
-h1{
+
+h1 {
   font-family: arial;
   font-size: 30px;
   color: #212121;
@@ -64,7 +70,8 @@ h1{
   background-color: #ED5A24;
   color: #212121;
 }
-aside{
+
+aside {
   background-color: #4A4A4A;
 }
 
@@ -115,11 +122,13 @@ aside{
     border-bottom: 1px solid #ED5A24;
   }
 }
+
 @media (max-width: 767px) {
   main {
     margin-top: 0;
   }
 }
+
 #toggle-theme {
   z-index: 1100;
 }
@@ -177,9 +186,10 @@ body.light-mode .contact-info h5,
 body.light-mode .contact-info i {
   color: #212121;
 }
+
 body.light-mode .btn-outline-light {
   color: #212121;
-  border-color: #212121; 
+  border-color: #212121;
 }
 
 body.light-mode .btn-outline-light:hover {
@@ -188,5 +198,31 @@ body.light-mode .btn-outline-light:hover {
   border-color: #ED5A24;
 }
 
+.carrinho-item {
+  background-color: #f0f0f0;
+  border-radius: 12px;
+  padding: 15px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
 
+.carrinho-item p {
+  margin: 0;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+}
 
+.carrinho-total {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 1.2em;
+  font-weight: 700;
+  color: #222;
+}
+
+#offcanvasRightLabel {
+  font-size: 30px;
+  font-family: 'Moriel', sans-serif;
+  color: #ED5A24;
+}
